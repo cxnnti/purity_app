@@ -1,0 +1,33 @@
+<%= form_for(@datum) do |f| %>
+  <% if @datum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@datum.errors.count, "error") %> prohibited this datum from being saved:</h2>
+
+      <ul>
+      <% @datum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<p class="center-align" style="font-weight: bold; color: rgb(33, 150, 243);">Tell us a little about you. What are your dreams??</p>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br>
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label "What are your dreams" %><br>
+    <%= f.text_area :message, :class => "apply-textarea" %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Send", class: "btn sbcolor" %>
+  </div>
+<% end %>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/slick.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+<style>
+#slides {
+  display:none;
+}
+
+#slides .slidesjs-container {
+  margin-bottom:10px;
+}
+
+#slides .slidesjs-previous {
+  margin-right: 5px;
+  float:left;
+    display: none;
+}
+
+#slides .slidesjs-stop {
+  margin-right: 5px;
+  float:left;
+    display: none;
+}
+#slides .slidesjs-next {
+  margin-right: 5px;
+  float:left;
+  display: none;
+}
+
+.slidesjs-pagination {
+    margin:6px 0 0;
+    float: right;
+    list-style: none;
+      display: none;
+}
+
+.slidesjs-pagination li {
+    float: left;
+    margin: 0 1px;
+      display: none;
+}
+
+.slidesjs-pagination li a {
+    display: block;
+    width: 13px;
+    height: 0;
+    padding-top: 13px;
+    background-image: url(/img/pagination.png);
+    background-position: 0 0;
+    float: left;
+    overflow: hidden;
+      display: none;
+}
+
+.slidesjs-pagination li a.active, .slidesjs-pagination li a:hover.active { background-position: 0 -13px }
+
+.slidesjs-pagination li a:hover { background-position: 0 -26px }
+
+#slides a:link, #slides a:visited { color: #333 }
+
+#slides a:hover, #slides a:active { color: #9e2020 }
+
+nav {
+  color: #fff;
+  background-color: #ee6e73;
+  width: 100%;
+  height: 66px;
+  line-height: 56px;
+
+}
+
+nav .centim {
+  margin-left: 25%;
+
+}
+
+.activelink{
+  border-bottom: 5px solid #4da2d9;
+  color: black;
+}
+
+   .navhov:hover{
+ border-bottom: 5px solid #4da2d9;
+ background: white;
+ color: #4da2d9;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+#slides{
+  position: relative;
+  top: -65px;
+  z-index: -2;
+}
+
+   .logomenu{
+    height: 100%;
+    margin-left: 20px;
+   }
+
+.gateman{
+  margin-right: 20px;
+}
+
+.firstsecthome{
+  position: relative;
+  top: -220px;
+  background-color: white;
+  height: auto;
+}
+
+.testimon{
+   position: relative;
+  top: -123px;
+}
+
+.hwgh{
+ text-transform: uppercase;
+ color: #4da2d9;
+ padding-bottom: 10px; 
+ border-bottom: 2px dotted #5da5ce;
+}
+
+.textcont{
+   font-size: 20px;
+   font-weight: 300;
+   line-height: 35px;
+   color: #363637;
+   text-align: justify;
+   text-justify: inter-word;
+}
+
+.testi{
+  font-size: 75px;
+  font-weight: 700;
+}
+
+.testdescrip{
+font-size: 18px;
+font-weight: 300;
+position: relative;
+top: -45px;
+}
+
+
+
+
+input[type=email] {
+  line-height: 12px;
+  height: 40px;
+  padding-left: 2rem;
+  background-color: #fff;
+  border-radius: 25px 25px 25px 25px;
+   }
+   input[type=email]:focus {
+    background-color: #fff;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: none;
+    color: #444; }
+    .input-field input[type=email]:focus + label i, .input-field input[type=text]:focus ~ .mdi-navigation-close {
+      color: #444; }
+  .input-field input[type=email] + label {
+    left: 1rem; }
+  .input-field input[type=email] ~ .mdi-navigation-close {
+    position: relative;
+    top: 0;
+    right: 1rem;
+    color: transparent;
+    cursor: pointer;
+    font-size: 2rem;
+   }
+
+   input[type=text] {
+  line-height: 12px;
+  height: 40px;
+  padding-left: 2rem;
+  background-color: #fff;
+  border-radius: 25px 25px 25px 25px;
+ }
+   input[type=text]:focus {
+    background-color: #fff;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: none;
+    color: #444; }
+    .input-field input[type=text]:focus + label i, .input-field input[type=text]:focus ~ .mdi-navigation-close {
+      color: #444; }
+  .input-field input[type=text] + label {
+    left: 1rem; }
+  .input-field input[type=text] ~ .mdi-navigation-close {
+    position: relative;
+    top: 0;
+    right: 1rem;
+    color: transparent;
+    cursor: pointer;
+    font-size: 2rem;
+   }
+
+::-webkit-input-placeholder {
+ font-size: 15px;
+ color: #d0cdfa;
+}
+
+   .ymesag{
+    height: 100px;
+    padding: 20px;
+     background-color: #fff;
+  border-radius: 25px 25px 25px 25px;
+  width: 331px;
+   }
+
+   .collection {
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #4da2d9;
+}
+
+.collection .collection-item {
+  background-color: #4da2d9;
+  line-height: 1.5rem;
+  padding: 10px 20px;
+  height: auto;
+  margin: 7px;
+  height: auto;
+}
+
+
+.collection .collection-item.avatar .activity{
+  padding-top: 0px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+</style>
+
+<body>
+
+  <nav>
+ 
+    <div class="nav-wrapper" style="background-color: white;">
+<a href="/" class="brand-logo logomenu"><img src="logo.png" class="logomenu" ></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down gateman">
+        <li><a href="/" style="color: #464647;" class="navhov activelink">Home</a></li>
+        <li><a href="/aboutus" style="color: #464647;" class="navhov">About Us</a></li>
+        <li><a href="/admissions" style="color: #464647;" class="navhov">Admissions</a></li>
+        <li><a href="/academics" style="color: #464647;" class="navhov">Academics</a></li>
+        <li><a href="/student" style="color: #464647;" class="navhov">Student</a></li>
+        <li><a href="/accreditation" style="color: #464647;" class="navhov">Accreditation</a></li>
+        <li><a href="/apply" style="color: #464647;" class="navhov">Apply</a></li>
+      </ul>
+    </div>
+  </nav>
+<br>
+<br>
+    <div id="slides" >
+      <img width="940px" height="350px" src="br.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+      <img width="940px" height="350px" src="br2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+      <img width="940px" height="350px" src="br3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
+    </div>
+
+<section class="firstsecthome">
+  <br>
+<h4 class="center-align hwgh">How we got here</h4>
+<div class="container">
+  <div class="col s12 textcont">
+  <p class="center-align textcont"> Purity Institute of Technology was established in the year 2000 to pursue a three year Technician Course in the fileds of Electrical,
+    Mechanical, Construction, Motor Vehicle Technology and Diploma in Business Studies. We are proud to say that over the years, the school has
+    produced a lot of these technicians who have gone through Polytechnics, some also in the working field. Armed with competent, dedicated and 
+    highly qualified staff that have been of help over the years, we are very hopeful that your choice of studying at <strong>Purity Institute of Tehnology</strong> will be a successful endeavour</P>
+  
+  </div>
+  </div>
+</section>
+<section>
+<div class="row testimon">
+  <div class="col l3" style=" border: 5px dashed #4da2d9;">
+   <p class="center-align testi">100%</p>
+   <p class="center-align testdescrip">of our students get employed</p>
+  </div>
+   <div class="col l3" style=" border: 5px dashed #4da2d9;">
+   <p class="center-align testi">12:1</p>
+   <p class="center-align testdescrip">Student to lecturer ratio</p>
+  </div>
+   <div class="col l3" style=" border: 5px dashed #4da2d9;">
+   <p class="center-align testi">1 <span style="font-size: 25px; font-weight: 300; position: relative; top: -15px;">of</span> 2</p>
+   <p class="center-align testdescrip">Tetiary technical institutions</p>
+  </div>
+   <div class="col l3" style=" border: 5px dashed #4da2d9;">
+   <p class="center-align testi">95%</p>
+   <p class="center-align testdescrip">of our students graduate</p>
+  </div>
+</div>
+</section>
+
+<footer class="page-footer" style="background-color: #4da2d9;">
+          <div class="container">
+            <div class="row">
+              <div class="col l4 s12">
+                <h5 class="white-text">Find us on Social Media</h5>
+                <ul class="collection">
+    <li class="collection-item avatar">
+      <img src="fblogo.png" alt="" class="circle">
+      <p class="activity">
+      <span class="titl">Facebook</span>         
+       </p>
+    </li>
+     <li class="collection-item avatar">
+      <img src="tlogo.png" alt="" class="circle">
+      <p class="activity">
+      <span class="titl">Twitter</span>         
+       </p>
+    </li>
+     <li class="collection-item avatar">
+      <img src="ilogo.png" alt="" class="circle">
+      <p class="activity">
+      <span class="titl">Instagram</span>         
+       </p>
+    </li>
+  </ul>
+              </div>
+               <div class="col l4 s12">
+                <h5 class="white-text">Contact details</h5>
+                <p class="grey-text text-lighten-4">Purity Technology Institute,</p>
+                <p class="grey-text text-lighten-4">P.O.Box HP 524, Ho,</p>
+                <p class="grey-text text-lighten-4">Ho, Volta Region.</p>
+                <p class="grey-text text-lighten-4">0244852432 / 0240417967</p>
+              </div>
+              <div class="col l4 s12">
+                <%= render 'data/form', datum: @datum %>
+                <h5 class="white-text">Cotact us</h5>
+                <p class="center-align"><input type="text" class="validate" placeholder="Your name"></p>
+                <p class="center-align"><input type="email" class="validate" placeholder="Your email"></p>
+                 <p class="center-align"><textarea class="ymesag" placeholder="Your message here"></textarea></p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            &copy; 2016 Purity Technology Institute. All Rights Reserved.
+            <a class="grey-text text-lighten-4 right" href="#!">FAQ</a>
+            </div>
+          </div>
+        </footer>
+
+ <script type="text/javascript" src="jquery.js"></script>
+  <script src="js/jquery.slides.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript">
+       $(".button-collapse").sideNav();
+      </script>
+      <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 350,
+        navigation: {
+          effect: "fade"
+        },
+         play: {
+      active: true,
+        // [boolean] Generate the play and stop buttons.
+        // You cannot use your own buttons. Sorry.
+      effect: "slide",
+        // [string] Can be either "slide" or "fade".
+      interval: 3000,
+        // [number] Time spent on each slide in milliseconds.
+      auto: true,
+        // [boolean] Start playing the slideshow on load.
+      swap: true,
+        // [boolean] show/hide stop and play buttons
+      pauseOnHover: true,
+        // [boolean] pause a playing slideshow on hover
+      restartDelay: 2500
+        // [number] restart delay on inactive slideshow
+    },
+        pagination: {
+          effect: "fade"
+        },
+        effect: {
+          fade: {
+            speed: 400
+          }
+        }
+      });
+    });
+  </script>
+    </body>
+  </html>

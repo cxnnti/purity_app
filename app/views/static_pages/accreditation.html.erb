@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/slick.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+<style>
+
+nav {
+  color: #fff;
+  background-color: #ee6e73;
+  width: 100%;
+  height: 66px;
+  line-height: 56px;
+
+}
+
+nav .centim {
+  margin-left: 25%;
+
+}
+
+.activelink{
+  border-bottom: 5px solid #4da2d9;
+  color: black;
+}
+
+   .navhov:hover{
+ border-bottom: 5px solid #4da2d9;
+ background: white;
+ color: #4da2d9;
+     -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+   .logomenu{
+    height: 100%;
+    margin-left: 20px;
+   }
+
+.gateman{
+  margin-right: 20px;
+}
+
+.aboutimage{
+  width: 100%;
+  height: 350px;
+  z-index: -2;
+  position: relative;
+  top: -20px;
+}
+
+.aboutindex{
+  width: 100%;
+  height: auto;
+  background-color: #8bbad5;
+  padding: 15px;
+}
+
+.creative{
+    font-size: 20px;
+   font-weight: 300;
+   line-height: 35px;
+   color: #363637;
+   text-align: justify;
+   text-justify: inter-word;
+}
+
+input[type=email] {
+  line-height: 12px;
+  height: 40px;
+  padding-left: 2rem;
+  background-color: #fff;
+  border-radius: 25px 25px 25px 25px;
+   }
+   input[type=email]:focus {
+    background-color: #fff;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: none;
+    color: #444; }
+    .input-field input[type=email]:focus + label i, .input-field input[type=text]:focus ~ .mdi-navigation-close {
+      color: #444; }
+  .input-field input[type=email] + label {
+    left: 1rem; }
+  .input-field input[type=email] ~ .mdi-navigation-close {
+    position: relative;
+    top: 0;
+    right: 1rem;
+    color: transparent;
+    cursor: pointer;
+    font-size: 2rem;
+   }
+
+   input[type=text] {
+  line-height: 12px;
+  height: 40px;
+  padding-left: 2rem;
+  background-color: #fff;
+  border-radius: 25px 25px 25px 25px;
+ }
+   input[type=text]:focus {
+    background-color: #fff;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: none;
+    color: #444; }
+    .input-field input[type=text]:focus + label i, .input-field input[type=text]:focus ~ .mdi-navigation-close {
+      color: #444; }
+  .input-field input[type=text] + label {
+    left: 1rem; }
+  .input-field input[type=text] ~ .mdi-navigation-close {
+    position: relative;
+    top: 0;
+    right: 1rem;
+    color: transparent;
+    cursor: pointer;
+    font-size: 2rem;
+   }
+
+::-webkit-input-placeholder {
+ font-size: 15px;
+ color: #d0cdfa;
+}
+
+   .ymesag{
+    height: 100px;
+    padding: 20px;
+     background-color: #fff;
+  border-radius: 25px 25px 25px 25px;
+  width: 331px;
+   }
+
+   .collection {
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #4da2d9;
+}
+
+.collection .collection-item {
+  background-color: #4da2d9;
+  line-height: 1.5rem;
+  padding: 10px 20px;
+  height: auto;
+  margin: 7px;
+  height: auto;
+}
+
+
+.collection .collection-item.avatar .activity{
+  padding-top: 0px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.accreditationlogo{
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+</style>
+
+<body>
+
+  <nav>
+ 
+    <div class="nav-wrapper" style="background-color: white;">
+<a href="/" class="brand-logo logomenu"><img src="logo.png" class="logomenu" ></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down gateman">
+        <li><a href="/" style="color: #464647;" class="navhov">Home</a></li>
+        <li><a href="/aboutus" style="color: #464647;" class="navhov">About Us</a></li>
+        <li><a href="/admissions" style="color: #464647;" class="navhov">Admissions</a></li>
+        <li><a href="/academics" style="color: #464647;" class="navhov">Academics</a></li>
+        <li><a href="/student" style="color: #464647;" class="navhov">Student</a></li>
+        <li><a href="/accreditation" style="color: #464647;" class="navhov activelink">Accreditation</a></li>
+        <li><a href="/apply" style="color: #464647;" class="navhov">Apply</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="row">
+    <img src="acred.jpg" class="resposive-img aboutimage">
+  </div>
+
+  <div class="row">
+    <div class="container">
+      <div class="col l3">
+        <img src="geslogo1.png" class="resposive-img accreditationlogo">
+      </div>
+      <div class="col l9">
+        <h5 style="color: #42a2d9;">Ghana Education Service (Technical Education Unit)</h5>
+        <p class="creative">
+       At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi,
+        </p>
+      </div>
+      <div class="col l3">
+        <img src="moe.jpg" class="resposive-img accreditationlogo" width="100%">
+      </div>
+      <div class="col l9">
+        <h5 style="color: #42a2d9;">Ministry of Education (MOE)</h5>
+        <p class="creative">
+      The Ministry of Education is committed to put in place an education system focused on promoting creativity and problem-solving through the development of academics, technical and vocational programmes that will improve the acquisition of skills and assure job-market readiness.
+        </p>
+      </div>
+    </div>
+  </div>
+
+<footer class="page-footer" style="background-color: #4da2d9;">
+          <div class="container">
+            <div class="row">
+              <div class="col l4 s12">
+                <h5 class="white-text">Find us on Social Media</h5>
+                <ul class="collection">
+    <li class="collection-item avatar">
+      <img src="fblogo.png" alt="" class="circle">
+      <p class="activity">
+      <span class="titl">Facebook</span>         
+       </p>
+    </li>
+     <li class="collection-item avatar">
+      <img src="tlogo.png" alt="" class="circle">
+      <p class="activity">
+      <span class="titl">Twitter</span>         
+       </p>
+    </li>
+     <li class="collection-item avatar">
+      <img src="ilogo.png" alt="" class="circle">
+      <p class="activity">
+      <span class="titl">Instagram</span>         
+       </p>
+    </li>
+  </ul>
+              </div>
+               <div class="col l4 s12">
+                <h5 class="white-text">Contact details</h5>
+                <p class="grey-text text-lighten-4">Purity Institute of Technology,</p>
+                <p class="grey-text text-lighten-4">P.O.Box HP 524, Ho,</p>
+                <p class="grey-text text-lighten-4">Ho, Volta Region.</p>
+                <p class="grey-text text-lighten-4">0244852432 / 0240417967</p>
+              </div>
+              <div class="col l4 s12">
+                <h5 class="white-text">Cotact us</h5>
+                <p class="center-align"><input type="text" class="validate" placeholder="Your name"></p>
+                <p class="center-align"><input type="email" class="validate" placeholder="Your email"></p>
+                 <p class="center-align"><textarea class="ymesag" placeholder="Your message here"></textarea></p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            &copy; 2016 Purity Institute of Technology. All Rights Reserved.
+            <a class="grey-text text-lighten-4 right" href="#!">FAQ</a>
+            </div>
+          </div>
+        </footer>
+ <script type="text/javascript" src="jquery.js"></script>
+  <script src="js/jquery.slides.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript">
+       $(".button-collapse").sideNav();
+      </script>
+  </body>
+  </html>
