@@ -75,12 +75,14 @@ nav .centim {
    text-justify: inter-word;
 }
 
+
 input[type=email] {
   line-height: 12px;
   height: 40px;
   padding-left: 2rem;
   background-color: #fff;
   border-radius: 25px 25px 25px 25px;
+  width: 200px;
    }
    input[type=email]:focus {
     background-color: #fff;
@@ -106,6 +108,7 @@ input[type=email] {
   padding-left: 2rem;
   background-color: #fff;
   border-radius: 25px 25px 25px 25px;
+  width: 200px;
  }
    input[type=text]:focus {
     background-color: #fff;
@@ -135,7 +138,7 @@ input[type=email] {
     padding: 20px;
      background-color: #fff;
   border-radius: 25px 25px 25px 25px;
-  width: 331px;
+  width: 100%;
    }
 
    .collection {
@@ -167,6 +170,23 @@ input[type=email] {
   margin-left: 20px;
 }
 
+@media only screen and (max-width : 992px) {
+
+ .logomenu{
+    height: 100%;
+    margin-left: 0px;
+   }
+
+.aboutimage{
+  width: 100%;
+  height: 180px;
+  z-index: -2;
+  position: relative;
+  top: -20px;
+}
+
+}
+
 </style>
 
 <body>
@@ -174,7 +194,9 @@ input[type=email] {
   <nav>
  
     <div class="nav-wrapper" style="background-color: white;">
-<a href="/" class="brand-logo logomenu"><img src="logo.png" class="logomenu" ></a>
+<a href="/" class="brand-logo logomenu hide-on-med-and-down"><img src="logo.png" class="logomenu" ></a>
+<a href="/" class="brand-logo logomenu hide-on-large-only"><img src="logomobile.png" class="logomenu" ></a>
+<a href="#" data-activates="mobile-demo" class="button-collapse"><i style="color: #ddd;" class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down gateman">
       <li><a href="/" style="color: #464647;" class="navhov">Home</a></li>
         <li><a href="/aboutus" style="color: #464647;" class="navhov activelink">About Us</a></li>
@@ -183,6 +205,15 @@ input[type=email] {
         <li><a href="/student" style="color: #464647;" class="navhov">Student</a></li>
         <li><a href="/accreditation" style="color: #464647;" class="navhov">Accreditation</a></li>
         <li><a href="/apply" style="color: #464647;" class="navhov">Apply</a></li>
+      </ul>
+        <ul class="side-nav" id="mobile-demo">
+        <li><a href="/">Home</a></li>
+        <li><a href="/aboutus">About Us</a></li>
+        <li><a href="/admissions">Admissions</a></li>
+        <li><a href="/academics">Academics</a></li>
+        <li><a href="/student">Student</a></li>
+        <li><a href="/accreditation">Accreditation</a></li>
+        <li><a href="/apply">Apply</a></li>
       </ul>
     </div>
   </nav>
@@ -193,7 +224,7 @@ input[type=email] {
 
   <div class="row">
     <div class="container">
-      <div class="col l3">
+      <div class="col l3 hide-on-med-and-down">
         <div class="aboutindex">
           <h5 style="color: white;"> About </h5>
           <ul>
@@ -206,8 +237,8 @@ input[type=email] {
       <div class="col l9">
         <h4 style="color: #42a2d9;">Creativity and innovation</h4>
         <p class="creative">
-        <img src="pit.png" width="150px" height="200px" class="pitlogo">
-       At <strong>Purirty Technology Institute</strong>, we believe that a country's growth and progress is taggeg to how much it can innovate. Inovation is not only the one factor but in a more intrinsic way, creating that connetion between creativity and innovation. We educate our students with these core values in mind, ensuring it is well engrained in their spirits. Most of our students work work in great institutions and are key to helping shape the creativity and innovation culture in the company. Creativity is key, so is innovation. They cannot live with or without that is why it is fostered strongly in our school.
+        <img src="pit.png" width="150px" height="200px" class="pitlogo hide-on-med-and-down">
+       At <strong>Purirty Technology Institute</strong>, we believe that a country's growth and progress is tagged to how much it can innovate. Inovation is not only the one factor but in a more intrinsic way, creating that connetion between creativity and innovation. We educate our students with these core values in mind, ensuring it is well engrained in their spirits. Most of our students work work in great institutions and are key to helping shape the creativity and innovation culture in the company. Creativity is key, so is innovation. They cannot live with or without that is why it is fostered strongly in our school.
         </p>
          <h4 style="color: #42a2d9;">Applied Learning</h4>
         <p class="creative">
@@ -248,14 +279,14 @@ input[type=email] {
   </ul>
               </div>
                <div class="col l4 s12">
-                <h5 class="white-text">Contact details</h5>
+                <h5 class="white-text">Contact Details</h5>
                 <p class="grey-text text-lighten-4">Purity Technology Institute,</p>
                 <p class="grey-text text-lighten-4">P.O.Box HP 524, Ho,</p>
                 <p class="grey-text text-lighten-4">Ho, Volta Region.</p>
                 <p class="grey-text text-lighten-4">0244852432 / 0240417967</p>
               </div>
               <div class="col l4 s12">
-                <h5 class="white-text">Cotact us</h5>
+                <h5 class="white-text">Contact Us</h5>
                   <%= form_for(@datum) do |f| %>
                 <p class="center-align"><input type="text" class="validate"  name="datum[name]" id="datum_name" placeholder="Your name"></p>
                 <p class="center-align"><input type="email" class="validate" name="datum[email]" id="datum_email" placeholder="Your email"></p>

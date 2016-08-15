@@ -163,6 +163,7 @@ input[type=email] {
   padding-left: 2rem;
   background-color: #fff;
   border-radius: 25px 25px 25px 25px;
+  width: 200px;
    }
    input[type=email]:focus {
     background-color: #fff;
@@ -188,6 +189,7 @@ input[type=email] {
   padding-left: 2rem;
   background-color: #fff;
   border-radius: 25px 25px 25px 25px;
+  width: 200px;
  }
    input[type=text]:focus {
     background-color: #fff;
@@ -217,7 +219,7 @@ input[type=email] {
     padding: 20px;
      background-color: #fff;
   border-radius: 25px 25px 25px 25px;
-  width: 331px;
+  width: 100%;
    }
 
    .collection {
@@ -244,6 +246,39 @@ input[type=email] {
     font-weight: 600;
 }
 
+@media only screen and (max-width : 992px) {
+
+ .logomenu{
+    height: 100%;
+    margin-left: 0px;
+   }
+
+ .firstsecthome{
+  position: relative;
+  top: -40px;
+}
+
+#slides{
+  position: relative;
+  top: -42px;
+  z-index: -2;
+}
+
+.testimon{
+   position: relative;
+  top: -23px;
+}
+
+.aboutimage{
+  width: 100%;
+  height: 180px;
+  z-index: -2;
+  position: relative;
+  top: -42px;
+}
+
+}
+
 </style>
 
 <body>
@@ -251,7 +286,9 @@ input[type=email] {
   <nav>
  
     <div class="nav-wrapper" style="background-color: white;">
-<a href="/" class="brand-logo logomenu"><img src="logo.png" class="logomenu" ></a>
+<a href="/" class="brand-logo logomenu hide-on-med-and-down"><img src="logo.png" class="logomenu" ></a>
+<a href="/" class="brand-logo logomenu hide-on-large-only"><img src="logomobile.png" class="logomenu" ></a>
+<a href="#" data-activates="mobile-demo" class="button-collapse"><i style="color: #ddd;" class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down gateman">
         <li><a href="/" style="color: #464647;" class="navhov activelink">Home</a></li>
         <li><a href="/aboutus" style="color: #464647;" class="navhov">About Us</a></li>
@@ -261,15 +298,28 @@ input[type=email] {
         <li><a href="/accreditation" style="color: #464647;" class="navhov">Accreditation</a></li>
         <li><a href="/apply" style="color: #464647;" class="navhov">Apply</a></li>
       </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="/">Home</a></li>
+        <li><a href="/aboutus">About Us</a></li>
+        <li><a href="/admissions">Admissions</a></li>
+        <li><a href="/academics">Academics</a></li>
+        <li><a href="/student">Student</a></li>
+        <li><a href="/accreditation">Accreditation</a></li>
+        <li><a href="/apply">Apply</a></li>
+      </ul>
     </div>
   </nav>
 <br>
 <br>
-    <div id="slides" >
-      <img width="940px" height="350px" src="br2.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
-      <img width="940px" height="350px" src="br.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
-      <img width="940px" height="350px" src="br3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
+    <div id="slides" class="hide-on-small-only" >
+      <img width="940px" height="350px" class="resposive-img" src="br2.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+      <img width="940px" height="350px" class="resposive-img" src="br.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+      <img width="940px" height="350px" class="resposive-img" src="br3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
     </div>
+
+ <div class="row">
+    <img src="br2.jpg" class="resposive-img aboutimage">
+  </div>
 
 <section class="firstsecthome">
 <h4 class="center-align hwgh">How we got here</h4>
@@ -332,14 +382,14 @@ input[type=email] {
   </ul>
               </div>
                <div class="col l4 s12">
-                <h5 class="white-text">Contact details</h5>
+                <h5 class="white-text">Contact Details</h5>
                 <p class="grey-text text-lighten-4">Purity Technology Institute,</p>
                 <p class="grey-text text-lighten-4">P.O.Box HP 524, Ho,</p>
                 <p class="grey-text text-lighten-4">Ho, Volta Region.</p>
                 <p class="grey-text text-lighten-4">0244852432 / 0240417967</p>
               </div>
               <div class="col l4 s12">
-                <h5 class="white-text">Cotact us</h5>
+                <h5 class="white-text">Contact Us</h5>
                 <%= form_for(@datum) do |f| %>
                 <p class="center-align"><input type="text" class="validate"  name="datum[name]" id="datum_name" placeholder="Your name"></p>
                 <p class="center-align"><input type="email" class="validate" name="datum[email]" id="datum_email" placeholder="Your email"></p>
