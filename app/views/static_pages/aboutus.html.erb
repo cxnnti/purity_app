@@ -204,16 +204,16 @@ input[type=email] {
         </div>
       </div>
       <div class="col l9">
-        <h3 style="color: #42a2d9;">Creativity and innovation</h3>
+        <h4 style="color: #42a2d9;">Creativity and innovation</h4>
         <p class="creative">
         <img src="pit.png" width="150px" height="200px" class="pitlogo">
        At <strong>Purirty Technology Institute</strong>, we believe that a country's growth and progress is taggeg to how much it can innovate. Inovation is not only the one factor but in a more intrinsic way, creating that connetion between creativity and innovation. We educate our students with these core values in mind, ensuring it is well engrained in their spirits. Most of our students work work in great institutions and are key to helping shape the creativity and innovation culture in the company. Creativity is key, so is innovation. They cannot live with or without that is why it is fostered strongly in our school.
         </p>
-         <h3 style="color: #42a2d9;">Applied Learning</h3>
+         <h4 style="color: #42a2d9;">Applied Learning</h4>
         <p class="creative">
        Applied learning is very key and pivotal to our curriculum. What is the essense of a technical course if students can't apply it in their work environments. Applied learning places emphasis on practice, less on theory. The two are connected in a wonderful way to ensure productivity in the work environment.
         </p>
-         <h3 style="color: #42a2d9;">Our Mission</h3>
+         <h4 style="color: #42a2d9;">Our Mission</h4>
         <p class="creative">
        At <strong>Purity</strong>, our vision is to raise a new generation of technicians with an eye for innovation who will create value and Transform Mother Ghana through their participation in the various work environments.
         </p>
@@ -226,23 +226,23 @@ input[type=email] {
             <div class="row">
               <div class="col l4 s12">
                 <h5 class="white-text">Find us on Social Media</h5>
-                <ul class="collection">
+                 <ul class="collection">
     <li class="collection-item avatar">
-      <img src="fblogo.png" alt="" class="circle">
+      <a href="https://www.facebook.com/puritytechnologyinstitute/"><img src="fblogo.png" alt="" class="circle"></a>
       <p class="activity">
-      <span class="titl">Facebook</span>         
+      <a href="https://www.facebook.com/puritytechnologyinstitute/" style="color: black;"> <span class="titl">Facebook</span></a>         
        </p>
     </li>
      <li class="collection-item avatar">
-      <img src="tlogo.png" alt="" class="circle">
+       <a href="https://twitter.com/PurityTI"><img src="tlogo.png" alt="" class="circle"></a>
       <p class="activity">
-      <span class="titl">Twitter</span>         
-       </p>
-    </li>
+      <a href="https://twitter.com/PurityTI" style="color: black;"> <span class="titl">Twitter</span></a>         
+       </p>    
+     </li>
      <li class="collection-item avatar">
-      <img src="ilogo.png" alt="" class="circle">
+       <a href="https://www.instagram.com/purity_technology_institute/"><img src="ilogo.png" alt="" class="circle"></a>
       <p class="activity">
-      <span class="titl">Instagram</span>         
+      <a href="https://www.instagram.com/purity_technology_institute/" style="color: black;"> <span class="titl">Instagram</span></a>         
        </p>
     </li>
   </ul>
@@ -256,9 +256,13 @@ input[type=email] {
               </div>
               <div class="col l4 s12">
                 <h5 class="white-text">Cotact us</h5>
-                <p class="center-align"><input type="text" class="validate" placeholder="Your name"></p>
-                <p class="center-align"><input type="email" class="validate" placeholder="Your email"></p>
-                 <p class="center-align"><textarea class="ymesag" placeholder="Your message here"></textarea></p>
+                  <%= form_for(@datum) do |f| %>
+                <p class="center-align"><input type="text" class="validate"  name="datum[name]" id="datum_name" placeholder="Your name"></p>
+                <p class="center-align"><input type="email" class="validate" name="datum[email]" id="datum_email" placeholder="Your email"></p>
+                <p class="center-align"><input type="text" class="validate"  name="datum[phone]" id="datum_phone" placeholder="Phone number"></p>
+                 <p class="center-align"><textarea class="ymesag" name="datum[message]" id="datum_message" placeholder="Your message here"></textarea></p>
+                 <p class="center-align"><input type="submit" name="commit" value="Send" class="btn sbcolor" style="background-color: #fff; color: #000;" /></p>
+               <% end %>
               </div>
             </div>
           </div>

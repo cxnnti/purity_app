@@ -266,13 +266,12 @@ input[type=email] {
 <br>
 <br>
     <div id="slides" >
-      <img width="940px" height="350px" src="br.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
-      <img width="940px" height="350px" src="br2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+      <img width="940px" height="350px" src="br2.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+      <img width="940px" height="350px" src="br.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
       <img width="940px" height="350px" src="br3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
     </div>
 
 <section class="firstsecthome">
-  <br>
 <h4 class="center-align hwgh">How we got here</h4>
 <div class="container">
   <div class="col s12 textcont">
@@ -286,19 +285,20 @@ input[type=email] {
 </section>
 <section>
 <div class="row testimon">
-  <div class="col l3" style=" border: 5px dashed #4da2d9;">
+  <h4 class="center-align hwgh">Facts About Us</h4>
+  <div class="col l3 m6 s12" style=" border: 5px dashed #4da2d9;">
    <p class="center-align testi">100%</p>
    <p class="center-align testdescrip">of our students get employed</p>
   </div>
-   <div class="col l3" style=" border: 5px dashed #4da2d9;">
+   <div class="col l3 m6 s12" style=" border: 5px dashed #4da2d9;">
    <p class="center-align testi">12:1</p>
    <p class="center-align testdescrip">Student to lecturer ratio</p>
   </div>
-   <div class="col l3" style=" border: 5px dashed #4da2d9;">
+   <div class="col l3 m6 s12" style=" border: 5px dashed #4da2d9;">
    <p class="center-align testi">1 <span style="font-size: 25px; font-weight: 300; position: relative; top: -15px;">of</span> 2</p>
    <p class="center-align testdescrip">Tetiary technical institutions</p>
   </div>
-   <div class="col l3" style=" border: 5px dashed #4da2d9;">
+   <div class="col l3 m6 s12" style=" border: 5px dashed #4da2d9;">
    <p class="center-align testi">95%</p>
    <p class="center-align testdescrip">of our students graduate</p>
   </div>
@@ -312,21 +312,21 @@ input[type=email] {
                 <h5 class="white-text">Find us on Social Media</h5>
                 <ul class="collection">
     <li class="collection-item avatar">
-      <img src="fblogo.png" alt="" class="circle">
+      <a href="https://www.facebook.com/puritytechnologyinstitute/"><img src="fblogo.png" alt="" class="circle"></a>
       <p class="activity">
-      <span class="titl">Facebook</span>         
+      <a href="https://www.facebook.com/puritytechnologyinstitute/" style="color: black;"> <span class="titl">Facebook</span></a>         
        </p>
     </li>
      <li class="collection-item avatar">
-      <img src="tlogo.png" alt="" class="circle">
+       <a href="https://twitter.com/PurityTI"><img src="tlogo.png" alt="" class="circle"></a>
       <p class="activity">
-      <span class="titl">Twitter</span>         
-       </p>
-    </li>
+      <a href="https://twitter.com/PurityTI" style="color: black;"> <span class="titl">Twitter</span></a>         
+       </p>    
+     </li>
      <li class="collection-item avatar">
-      <img src="ilogo.png" alt="" class="circle">
+       <a href="https://www.instagram.com/purity_technology_institute/"><img src="ilogo.png" alt="" class="circle"></a>
       <p class="activity">
-      <span class="titl">Instagram</span>         
+      <a href="https://www.instagram.com/purity_technology_institute/" style="color: black;"> <span class="titl">Instagram</span></a>         
        </p>
     </li>
   </ul>
@@ -339,11 +339,14 @@ input[type=email] {
                 <p class="grey-text text-lighten-4">0244852432 / 0240417967</p>
               </div>
               <div class="col l4 s12">
-                <%= render 'data/form', datum: @datum %>
                 <h5 class="white-text">Cotact us</h5>
-                <p class="center-align"><input type="text" class="validate" placeholder="Your name"></p>
-                <p class="center-align"><input type="email" class="validate" placeholder="Your email"></p>
-                 <p class="center-align"><textarea class="ymesag" placeholder="Your message here"></textarea></p>
+                <%= form_for(@datum) do |f| %>
+                <p class="center-align"><input type="text" class="validate"  name="datum[name]" id="datum_name" placeholder="Your name"></p>
+                <p class="center-align"><input type="email" class="validate" name="datum[email]" id="datum_email" placeholder="Your email"></p>
+                <p class="center-align"><input type="text" class="validate"  name="datum[phone]" id="datum_phone" placeholder="Phone number"></p>
+                 <p class="center-align"><textarea class="ymesag" name="datum[message]" id="datum_message" placeholder="Your message here"></textarea></p>
+                 <p class="center-align"><input type="submit" name="commit" value="Send" class="btn sbcolor" style="background-color: #fff; color: #000;" /></p>
+               <% end %>
               </div>
             </div>
           </div>

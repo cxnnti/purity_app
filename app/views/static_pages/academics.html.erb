@@ -162,6 +162,11 @@ input[type=email] {
     font-weight: 600;
 }
 
+.constimg{
+  float: right;
+  margin-left: 20px;
+}
+
 
 </style>
 
@@ -191,7 +196,7 @@ input[type=email] {
     <div class="container">
       <div class="col l3">
         <div class="aboutindex">
-          <h5 style="color: #fff;"> About </h5>
+          <h5 style="color: #fff;"> Academics </h5>
           <ul>
           <li style="font-size: 14px; color: #fff; font-weight: 700; padding-bottom: 10px; border-bottom: 2px dotted #fff; margin-bottom: 5px; margin-top: 5px;">Imparting Virtues</li>
           <li style="font-size: 14px; color: #fff; font-weight: 700; padding-bottom: 10px; border-bottom: 2px dotted #fff; margin-bottom: 5px; margin-top: 5px;">Construction Technician</li>
@@ -203,13 +208,12 @@ input[type=email] {
         </div>
       </div>
       <div class="col l9">
-        <h3 style="color: #42a2d9;">Our Education imparts virtues</h3>
+        <h4 style="color: #42a2d9; font-weight: 700;">Our Education imparts virtues</h4>
         <p class="creative">
           Imparting virtues are at the core of our curriculum. Without virtues, highly skilled individuals can also become highly corrupt. By imparting in them the spirit of purity, we purge their minds so they do right even in the midst of persecution and wrong doers.
         </p>
 <br>
-        <h3 style="color: #42a2d9;">Courses offered</h3>
-        <br>
+        <h4 style="color: #42a2d9; font-weight: 700;">Courses offered</h4>
          <h5 style="color: #42a2d9;">Construction Technician</h5>
         <p class="creative">
         Construction technicians work in variety of construction environments
@@ -298,23 +302,23 @@ We offer DIploma in business studies under three fields.</p>
             <div class="row">
               <div class="col l4 s12">
                 <h5 class="white-text">Find us on Social Media</h5>
-                <ul class="collection">
+                 <ul class="collection">
     <li class="collection-item avatar">
-      <img src="fblogo.png" alt="" class="circle">
+      <a href="https://www.facebook.com/puritytechnologyinstitute/"><img src="fblogo.png" alt="" class="circle"></a>
       <p class="activity">
-      <span class="titl">Facebook</span>         
+      <a href="https://www.facebook.com/puritytechnologyinstitute/" style="color: black;"> <span class="titl">Facebook</span></a>         
        </p>
     </li>
      <li class="collection-item avatar">
-      <img src="tlogo.png" alt="" class="circle">
+       <a href="https://twitter.com/PurityTI"><img src="tlogo.png" alt="" class="circle"></a>
       <p class="activity">
-      <span class="titl">Twitter</span>         
-       </p>
-    </li>
+      <a href="https://twitter.com/PurityTI" style="color: black;"> <span class="titl">Twitter</span></a>         
+       </p>    
+     </li>
      <li class="collection-item avatar">
-      <img src="ilogo.png" alt="" class="circle">
+       <a href="https://www.instagram.com/purity_technology_institute/"><img src="ilogo.png" alt="" class="circle"></a>
       <p class="activity">
-      <span class="titl">Instagram</span>         
+      <a href="https://www.instagram.com/purity_technology_institute/" style="color: black;"> <span class="titl">Instagram</span></a>         
        </p>
     </li>
   </ul>
@@ -328,9 +332,13 @@ We offer DIploma in business studies under three fields.</p>
               </div>
               <div class="col l4 s12">
                 <h5 class="white-text">Cotact us</h5>
-                <p class="center-align"><input type="text" class="validate" placeholder="Your name"></p>
-                <p class="center-align"><input type="email" class="validate" placeholder="Your email"></p>
-                 <p class="center-align"><textarea class="ymesag" placeholder="Your message here"></textarea></p>
+                  <%= form_for(@datum) do |f| %>
+                <p class="center-align"><input type="text" class="validate"  name="datum[name]" id="datum_name" placeholder="Your name"></p>
+                <p class="center-align"><input type="email" class="validate" name="datum[email]" id="datum_email" placeholder="Your email"></p>
+                <p class="center-align"><input type="text" class="validate"  name="datum[phone]" id="datum_phone" placeholder="Phone number"></p>
+                 <p class="center-align"><textarea class="ymesag" name="datum[message]" id="datum_message" placeholder="Your message here"></textarea></p>
+                 <p class="center-align"><input type="submit" name="commit" value="Send" class="btn sbcolor" style="background-color: #fff; color: #000;" /></p>
+               <% end %>
               </div>
             </div>
           </div>

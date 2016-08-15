@@ -198,7 +198,7 @@ input[type=email] {
       <div class="col l9">
         <h5 style="color: #42a2d9;">Ghana Education Service (Technical Education Unit)</h5>
         <p class="creative">
-       At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi,
+       The Ghana Educational Service Technical Education Unit is an arm of GES responsible for overseeing all technical instituion in Ghana. It's role is to provide accreditation, monitor and make sure technical institutions are living up to their standards.
         </p>
       </div>
       <div class="col l3">
@@ -218,23 +218,23 @@ input[type=email] {
             <div class="row">
               <div class="col l4 s12">
                 <h5 class="white-text">Find us on Social Media</h5>
-                <ul class="collection">
+                              <ul class="collection">
     <li class="collection-item avatar">
-      <img src="fblogo.png" alt="" class="circle">
+      <a href="https://www.facebook.com/puritytechnologyinstitute/"><img src="fblogo.png" alt="" class="circle"></a>
       <p class="activity">
-      <span class="titl">Facebook</span>         
+      <a href="https://www.facebook.com/puritytechnologyinstitute/" style="color: black;"> <span class="titl">Facebook</span></a>         
        </p>
     </li>
      <li class="collection-item avatar">
-      <img src="tlogo.png" alt="" class="circle">
+       <a href="https://twitter.com/PurityTI"><img src="tlogo.png" alt="" class="circle"></a>
       <p class="activity">
-      <span class="titl">Twitter</span>         
-       </p>
-    </li>
+      <a href="https://twitter.com/PurityTI" style="color: black;"> <span class="titl">Twitter</span></a>         
+       </p>    
+     </li>
      <li class="collection-item avatar">
-      <img src="ilogo.png" alt="" class="circle">
+       <a href="https://www.instagram.com/purity_technology_institute/"><img src="ilogo.png" alt="" class="circle"></a>
       <p class="activity">
-      <span class="titl">Instagram</span>         
+      <a href="https://www.instagram.com/purity_technology_institute/" style="color: black;"> <span class="titl">Instagram</span></a>         
        </p>
     </li>
   </ul>
@@ -248,9 +248,13 @@ input[type=email] {
               </div>
               <div class="col l4 s12">
                 <h5 class="white-text">Cotact us</h5>
-                <p class="center-align"><input type="text" class="validate" placeholder="Your name"></p>
-                <p class="center-align"><input type="email" class="validate" placeholder="Your email"></p>
-                 <p class="center-align"><textarea class="ymesag" placeholder="Your message here"></textarea></p>
+                  <%= form_for(@datum) do |f| %>
+                <p class="center-align"><input type="text" class="validate"  name="datum[name]" id="datum_name" placeholder="Your name"></p>
+                <p class="center-align"><input type="email" class="validate" name="datum[email]" id="datum_email" placeholder="Your email"></p>
+                <p class="center-align"><input type="text" class="validate"  name="datum[phone]" id="datum_phone" placeholder="Phone number"></p>
+                 <p class="center-align"><textarea class="ymesag" name="datum[message]" id="datum_message" placeholder="Your message here"></textarea></p>
+                 <p class="center-align"><input type="submit" name="commit" value="Send" class="btn sbcolor" style="background-color: #fff; color: #000;" /></p>
+               <% end %>
               </div>
             </div>
           </div>
