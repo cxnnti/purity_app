@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/slick.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+<style>
+
+nav {
+  color: #fff;
+  background-color: #ee6e73;
+  width: 100%;
+  height: 66px;
+  line-height: 56px;
+
+}
+
+nav .centim {
+  margin-left: 25%;
+
+}
+
+.activelink{
+  border-bottom: 5px solid #4da2d9;
+  color: black;
+}
+
+   .navhov:hover{
+ border-bottom: 5px solid #4da2d9;
+ background: white;
+ color: #4da2d9;
+     -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+   .logomenu{
+    height: 100%;
+    margin-left: 20px;
+   }
+
+.gateman{
+  margin-right: 20px;
+}
+
+.aboutimage{
+  width: 100%;
+  height: 350px;
+  z-index: -2;
+  position: relative;
+  top: -20px;
+}
+
+.aboutindex{
+  width: 100%;
+  height: auto;
+  background-color: #8bbad5;
+  padding: 15px;
+}
+
+.creative{
+    font-size: 20px;
+   font-weight: 300;
+   line-height: 35px;
+   color: #363637;
+   text-align: justify;
+   text-justify: inter-word;
+}
+
+
+
+
+   .ymesag{
+    height: 100px;
+    padding: 20px;
+     background-color: #fff;
+  border-radius: 25px 25px 25px 25px;
+  width: 100%;
+   }
+
+   .collection {
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #4da2d9;
+}
+
+.collection .collection-item {
+  background-color: #4da2d9;
+  line-height: 1.5rem;
+  padding: 10px 20px;
+  height: auto;
+  margin: 7px;
+  height: auto;
+}
+
+
+.collection .collection-item.avatar .activity{
+  padding-top: 0px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.pitlogo{
+  float: right;
+  margin-left: 20px;
+}
+
+.exintro{
+  color: #4d4d4d;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.pointtitle{
+  font-weight: bolder;
+  color: #1aa8ea;
+  border-bottom: 3px solid #1aa8ea;
+}
+
+.pointexplainer{
+  text-align: justify;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.articletitle{
+  font-size: 30px;
+  font-weight: 300;
+  color: #000;
+}
+.categorytitle{
+   font-size: 30px;
+  font-weight: 700;
+  color: #1aa8ea;
+}
+
+.calltoaction{
+  background-color: #1aa8ea;
+  padding: 20px;
+}
+
+.callp{
+  font-size: 20px;
+  text-align: justify;
+  font-weight: 600;
+  color: #fff;
+}
+
+.scola{
+box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.abit{
+  font-weight: bold;
+}
+
+.lilabt{
+  font-size: 14px;
+  text-align: justify;
+}
+
+@media only screen and (max-width : 992px) {
+
+ .logomenu{
+    height: 100%;
+    margin-left: 0px;
+   }
+
+.aboutimage{
+  width: 100%;
+  height: 180px;
+  z-index: -2;
+  position: relative;
+  top: -20px;
+}
+
+}
+
+</style>
+
+<body style="background-color: #fefefe;">
+
+  <nav>
+ 
+    <div class="nav-wrapper" style="background-color: white;">
+<a href="/" class="brand-logo logomenu hide-on-med-and-down"><img src="logo.png" class="logomenu" ></a>
+<a href="/" class="brand-logo logomenu hide-on-large-only"><img src="logomobile.png" class="logomenu" ></a>
+<a href="#" data-activates="mobile-demo" class="button-collapse"><i style="color: #ddd;" class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down gateman">
+      <li><a href="/" style="color: #464647;" class="navhov">Home</a></li>
+        <li><a href="/aboutus" style="color: #464647;" class="navhov">About Us</a></li>
+        <li><a href="/admissions" style="color: #464647;" class="navhov">Admissions</a></li>
+        <li><a href="/academics" style="color: #464647;" class="navhov activelink">Academics</a></li>
+        <li><a href="/student" style="color: #464647;" class="navhov">Student</a></li>
+        <li><a href="/accreditation" style="color: #464647;" class="navhov">Accreditation</a></li>
+        <li><a href="/apply" style="color: #464647;" class="navhov">Apply</a></li>
+      </ul>
+        <ul class="side-nav" id="mobile-demo">
+        <li><a href="/">Home</a></li>
+        <li><a href="/aboutus">About Us</a></li>
+        <li><a href="/admissions">Admissions</a></li>
+        <li><a href="/academics">Academics</a></li>
+        <li><a href="/student">Student</a></li>
+        <li><a href="/accreditation">Accreditation</a></li>
+        <li><a href="/apply">Apply</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="row">
+   <div class="container">
+    <br>
+     <h3 class="categorytitle"> ACADEMICS</h3>
+     <hr>
+  <div class ="col l9 m12 s12">
+
+ <h5 class="articletitle"> The top four habits of top Students </h5>
+ <br>
+ <img src="studentslearn.jpg" class="responsive-img">
+ <br>
+ <p class="exintro">Sometimes it’s a question of intelligence or insight, and sometimes it’s sheer good luck. But a lot of the time it’s the result of good habits: things you do on a regular basis that set you aside from the hordes of other, more scattered, students. In the hopes of separating the sheep from the goats, we present the following fourteen habits of top-notch college students. You’ll find that these people:</p>
+<br>
+ <h5 class="pointtitle">1. Have a schedule.</h5>
+ <p class="pointexplainer">Not only do they know when the tests and papers fall in the semester, but they have a good sense of what work needs to be done each week as the semester progresses. Nice and balanced: everything in gear and no worries come exam time. They’re time management experts.</p>
+ <h5 class="pointtitle">2. Divide up the tasks.</h5>
+ <p class="pointexplainer">Readings get broken up into manageable chunks (not two hundred pages in one sitting). Quizzes and tests are studied for over the course of a week (not at 3 a.m. the night before). And paper ideas start gestating when the assignment is handed out (not the day before it’s due, when you can barely formulate an idea, much less think through an issue).</p>
+ <h5 class="pointtitle">3. Are organized.</h5>
+ <p class="pointexplainer">It’s impossible to do any real work when you don’t have the tools for the job: a working computer with the right software, a fast Internet connection, a good printer, and, for some courses, a thorough knowledge of how to navigate the course web page and the university and library portals. Not to mention the basic materials of the course: a full set of lecture notes, the textbooks and articles, and, of course, all the course handouts and assignments.</p>
+ <h5 class="pointtitle">4. Hang out with smart friends.</h5>
+ <p class="pointexplainer">Successful students know that spending lots of time with friends who don’t even know what courses they’re taking — or why they’re in college at all — can create an atmosphere so toxic that any attempts to do well immediately wither and die. Pick your cohorts as carefully as you pick your courses</p>
+</div>
+<div class="col l3 m6 s6">
+  <br>
+  <h6 class="abit">About Purity</h6>
+  <p class="lilabt"> Purity Institute of Technology was established in the year 2000 to pursue a three year Technician Course in the fileds of Electrical, Mechanical, Construction, Motor Vehicle Technology and Diploma in Business Studies.  </p>
+  <img src="scola.jpg" class="responsive-img scola">
+  </div>
+</div>
+  </div>
+  <div class="container">
+  <div class="calltoaction">
+    <p class="callp">Purity Technology Institute is admitting students for the 2016/2017 Academic year. Get a FREE admission form by giving us these details.</p>
+    <br>
+      <%= form_for(@datum) do |f| %>
+    <div class="col s12" style="background-color: #fff; padding: 10px;">
+      <div class="row">
+        <div class="input-field col l6 m6 s12">
+         <input type="text" class="validate"  name="datum[name]" id="datum_name" placeholder="Your name">
+          <label for="first_name">Name</label>
+        </div>
+        <div class="input-field col l6 m6 s12">
+          <input type="text" class="validate"  name="datum[phone]" id="datum_phone" placeholder="Phone number">
+          <label for="last_name">Phone Number</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="email" class="validate" name="datum[email]" id="datum_email" placeholder="Your email">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <p class="center-align"><input type="submit" name="commit" value="Send" class="btn sbcolor" style="background-color: #1aa8ea; color: #fff;" /></p>
+       </div>
+    <% end %>
+ 
+  </div>
+  </div>
+  <br>
+
+  <!--
+
+<footer class="page-footer" style="background-color: #4da2d9;">
+          <div class="container">
+            <div class="row">
+              <div class="col l4 s12">
+                <h5 class="white-text">Find us on Social Media</h5>
+                 <ul class="collection">
+    <li class="collection-item avatar">
+      <a href="https://www.facebook.com/puritytechnologyinstitute/"><img src="fblogo.png" alt="" class="circle"></a>
+      <p class="activity">
+      <a href="https://www.facebook.com/puritytechnologyinstitute/" style="color: black;"> <span class="titl">Facebook</span></a>         
+       </p>
+    </li>
+     <li class="collection-item avatar">
+       <a href="https://twitter.com/PurityTI"><img src="tlogo.png" alt="" class="circle"></a>
+      <p class="activity">
+      <a href="https://twitter.com/PurityTI" style="color: black;"> <span class="titl">Twitter</span></a>         
+       </p>    
+     </li>
+     <li class="collection-item avatar">
+       <a href="https://www.instagram.com/purity_technology_institute/"><img src="ilogo.png" alt="" class="circle"></a>
+      <p class="activity">
+      <a href="https://www.instagram.com/purity_technology_institute/" style="color: black;"> <span class="titl">Instagram</span></a>         
+       </p>
+    </li>
+  </ul>
+              </div>
+               <div class="col l4 s12">
+                <h5 class="white-text">Contact Details</h5>
+                <p class="grey-text text-lighten-4">Purity Technology Institute,</p>
+                <p class="grey-text text-lighten-4">P.O.Box HP 524, Ho,</p>
+                <p class="grey-text text-lighten-4">Ho, Volta Region.</p>
+                <p class="grey-text text-lighten-4">0244852432 / 0240417967</p>
+              </div>
+              <div class="col l4 s12">
+                <h5 class="white-text">Contact Us</h5>
+                  <%= form_for(@datum) do |f| %>
+                <p class="center-align"><input type="text" class="validate"  name="datum[name]" id="datum_name" placeholder="Your name"></p>
+                <p class="center-align"><input type="email" class="validate" name="datum[email]" id="datum_email" placeholder="Your email"></p>
+                <p class="center-align"><input type="text" class="validate"  name="datum[phone]" id="datum_phone" placeholder="Phone number"></p>
+                 <p class="center-align"><textarea class="ymesag" name="datum[message]" id="datum_message" placeholder="Your message here"></textarea></p>
+                 <p class="center-align"><input type="submit" name="commit" value="Send" class="btn sbcolor" style="background-color: #fff; color: #000;" /></p>
+               <% end %>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            &copy; 2016 Purity Technology Institute. All Rights Reserved.
+            <a class="grey-text text-lighten-4 right" href="#!">FAQ</a>
+            </div>
+          </div>
+        </footer>
+      -->
+ <script type="text/javascript" src="jquery.js"></script>
+  <script src="js/jquery.slides.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript">
+       $(".button-collapse").sideNav();
+      </script>
+  </body>
+  </html>

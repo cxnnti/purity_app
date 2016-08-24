@@ -28,6 +28,10 @@ def apply
    @datum = Datum.new
 end 
 
+def fourbigtips
+   @datum = Datum.new
+end
+
 end
 
 
