@@ -9,7 +9,8 @@ Rails.application.routes.draw do
   match '/student' , to: 'static_pages#student', via: 'get'
   match '/accreditation' , to: 'static_pages#accreditation', via: 'get'
   match '/apply' , to: 'static_pages#apply', via: 'get'
-   match '/fourbigtips' , to: 'static_pages#fourbigtips', via: 'get'
+  match '/fourbigtips' , to: 'static_pages#fourbigtips', via: 'get'
+   match '/thankyou' , to: 'static_pages#thankyou', via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -28,7 +28,7 @@ class DataController < ApplicationController
 
     respond_to do |format|
       if @datum.save
-        format.html { redirect_to @datum, notice: 'Datum was successfully created.' }
+        format.html { redirect_to '/thankyou' }
         format.json { render :show, status: :created, location: @datum }
       else
         format.html { render :new }

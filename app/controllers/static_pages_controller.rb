@@ -32,6 +32,10 @@ def fourbigtips
    @datum = Datum.new
 end
 
+def thankyou
+   @datum = Datum.new
+end
+
 end
 
 
