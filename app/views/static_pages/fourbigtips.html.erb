@@ -27,20 +27,38 @@ nav .centim {
 
 }
 
-.activelink{
-  border-bottom: 5px solid #4da2d9;
+nav ul a {
+  transition: background-color .3s;
+  font-size: 14px;
   color: black;
+  display: inline-block;
+  padding: 0 15px;
+  cursor: pointer;
 }
 
+ .oclass{
+    color: #8c8c8c;
+    text-transform: capitalize;
+   }
+
+
    .navhov:hover{
- border-bottom: 5px solid #4da2d9;
+ border-bottom: 5px solid #ddd;
+ color: #42ade7; 
  background: white;
- color: #4da2d9;
-     -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
 }
+
+
+
+
+.navhovactive{
+  border-bottom: 5px solid #4da2d9;
+  color: black;
+ background: white;
+ font-weight: bold;
+}
+
+
 
    .logomenu{
     height: 100%;
@@ -48,7 +66,7 @@ nav .centim {
    }
 
 .gateman{
-  margin-right: 20px;
+  margin-right: 50px;
 }
 
 .aboutimage{
@@ -198,13 +216,13 @@ box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 <a href="/" class="brand-logo logomenu hide-on-large-only"><img src="logomobile.png" class="logomenu" ></a>
 <a href="#" data-activates="mobile-demo" class="button-collapse"><i style="color: #ddd;" class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down gateman">
-      <li><a href="/" style="color: #464647;" class="navhov">Home</a></li>
-        <li><a href="/aboutus" style="color: #464647;" class="navhov">About Us</a></li>
-        <li><a href="/admissions" style="color: #464647;" class="navhov">Admissions</a></li>
-        <li><a href="/academics" style="color: #464647;" class="navhov activelink">Academics</a></li>
-        <li><a href="/student" style="color: #464647;" class="navhov">Student</a></li>
-        <li><a href="/accreditation" style="color: #464647;" class="navhov">Accreditation</a></li>
-        <li><a href="/apply" style="color: #464647;" class="navhov">Apply</a></li>
+        <li><a href="/"  class="navhov oclass">Home</a></li>
+        <li><a href="/aboutus" class="navhov oclass">About Us</a></li>
+        <li><a href="/admissions" class="navhov oclass">Admissions</a></li>
+        <li><a href="/academics" class="navhov oclass navhovactive">Academics</a></li>
+        <li><a href="/student" class="navhov oclass">Student</a></li>
+        <li><a href="/accreditation" class="navhov oclass">Accreditation</a></li>
+        <li><a href="/apply" class="navhov oclass">Apply</a></li>
       </ul>
         <ul class="side-nav" id="mobile-demo">
         <li><a href="/">Home</a></li>
@@ -227,7 +245,7 @@ box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 
  <h5 class="articletitle"> The top four habits of top Students </h5>
  <br>
- <img src="studentslearn.jpg" class="responsive-img">
+ <img src="stdln.jpg" class="responsive-img">
  <br>
  <p class="exintro">Sometimes it’s a question of intelligence or insight, and sometimes it’s sheer good luck. But a lot of the time it’s the result of good habits: things you do on a regular basis that set you aside from the hordes of other, more scattered, students. In the hopes of separating the sheep from the goats, we present the following fourteen habits of top-notch college students. You’ll find that these people:</p>
 <br>
